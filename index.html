@@ -28,6 +28,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "nLmhlO7Exi4VFGotj",
+      });
+    })();
+  </script>
 
   <!-- =======================================================
   * Template Name: QuickStart
@@ -109,19 +118,17 @@
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 text-center">
         <i class="bi bi-arrow-left-right"></i>
-        <p class="p-2">Faster Processing</p>
+        <p>Faster Processing</p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 text-center">
         <i class="bi bi-calendar3"></i>
-        <p class="p-2">Up-to-date information</p>
+        <p>Up-to-date information</p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-12 text-center">
         <i class="bi bi-currency-dollar"></i>
-        <p class="p-2">Resonable cost</p>
+        <p>Reasonable cost</p>
       </div>
-    </div>
-    <hr />
-
+      <hr/></div>
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -165,7 +172,7 @@
         <br />
       </div>
 
-      <div class="container ">
+      <div class="container">
         <div class="row justify-content-between">
 
           <div class="col-lg-3 col-md-3 col-sm-6 d-flex align-items-center">
@@ -187,7 +194,7 @@
             <div class="col-lg-10 col-md-3 col-sm-12 col card text-center rounded-0 p-5" style="width: 18rem;">
               <div class="d-flex align-items-center justify-content-center mx-auto mb-3 border border-2 rounded-circle"
                 style="width: 100px; height: 100px;">
-                <i class="bi bi-mortarboard fs-1"></i>
+                <i class="bi bi-book-half fs-1"></i>
               </div>
               <div class="card-body">
                 <h5 class="card-title fw-bold">University Guidance</h5>
@@ -202,7 +209,7 @@
             <div class="col-lg-10 col-md-3 col-sm-12 col card text-center rounded-0 p-5" style="width: 18rem;">
               <div class="d-flex align-items-center justify-content-center mx-auto mb-3 border border-2 rounded-circle"
                 style="width: 100px; height: 100px;">
-                <i class="bi bi-mortarboard fs-1"></i>
+                <i class="bi bi-files fs-1"></i>
               </div>
               <div class="card-body">
                 <h5 class="card-title fw-bold">Financial Documents Guidance</h5>
@@ -216,7 +223,7 @@
             <div class="col-lg-10 col-md-3 col-sm-12 col card text-center rounded-0 p-5" style="width: 18rem;">
               <div class="d-flex align-items-center justify-content-center mx-auto mb-3 border border-2 rounded-circle"
                 style="width: 100px; height: 100px;">
-                <i class="bi bi-mortarboard fs-1"></i>
+                <i class="bi bi-passport-fill fs-1"></i>
               </div>
               <div class="card-body">
                 <h5 class="card-title fw-bold">Visa Guidance</h5>
@@ -673,7 +680,7 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section bg-light">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -724,24 +731,24 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+            <form action="#" class="php-email-form" data-aos="fade-up"
               data-aos-delay="400">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="Telephone" placeholder="Your Number" required="">
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Number" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -749,7 +756,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" >Send Message</button>
                 </div>
 
               </div>
@@ -764,7 +771,7 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative">
 
     <div class="container footer-top">
       <div class="row gy-4">

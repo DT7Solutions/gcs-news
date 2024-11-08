@@ -1040,6 +1040,7 @@ section,
 --------------------------------------------------------------*/
 .about {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .about .content .who-we-are {
@@ -1116,17 +1117,17 @@ section,
 }
 
 
-.clients .country-logo img {
+/* .clients .country-logo img {
   
   transition: 0.3s;
   opacity: 0.5;
   filter: grayscale(100);
-}
+} */
 
-.clients .country-logo img:hover {
+/* .clients .country-logo img:hover {
   filter: none;
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1143,7 +1144,7 @@ section,
 .achievements-subheading {
   padding: 0 80px;
   color: #6c757d;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .achievement-card1 {
@@ -1215,6 +1216,12 @@ section,
   justify-content: center;
   margin-bottom: 10px;
 }
+@media (max-width: 767px) {
+  .achievement-card2 {
+    border-top-right-radius: 0;
+  }
+}
+
 .achievement-card3 .icon {
   background-color: #f9f9f9;
   border-radius: 50%;
@@ -1224,6 +1231,11 @@ section,
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .achievement-card3 {
+    border-bottom-left-radius: 0;
+  }
 }
 
 .achievement-card4 .icon {
@@ -1236,16 +1248,7 @@ section,
   justify-content: center;
   margin-bottom: 10px;
 }
-.achievement-card1 .value {
-  font-size: 4rem; 
-}
-.achievement-card2 .value {
-  font-size: 4rem; 
-}
-.achievement-card3 .value {
-  font-size: 4rem; 
-}
-.achievement-card4 .value {
+.achievement-card1, .achievement-card2, .achievement-card3, .achievement-card4 .value {
   font-size: 4rem; 
 }
 
@@ -1641,7 +1644,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type=button] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1650,7 +1653,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type=button]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
